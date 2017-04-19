@@ -1,4 +1,4 @@
-# Simulate openmp code in gem5 by m5thread 
+# Run openmp code in gem5 by m5thread 
 
 Openmp is so far not supported in gem5 se, so we can either 1. use fully system (fs) simulation or 2. link openmp code to m5thread as a workaround.
 
