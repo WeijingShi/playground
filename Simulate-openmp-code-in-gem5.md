@@ -20,11 +20,11 @@ Let's try the example, compile the code:
     
 Statically link to the library.
 
-    $g++ -static -o test_omp test_omp.o -lgomp ~/myOMP/libpthread.a -lgomp
+    $g++ -static -o test_omp test_omp.o -lgomp ~/m5thread/libpthread.a -lgomp
 
 Simulate with an example X86-isa gem5 build (if you have not build one, check the gem5 website)
 
     $cd ~/gem5-gpu/gem5/
-    $build/X86_VI_hammer_GPU/gem5.opt ../gem5-gpu/configs/se_fusion.py -n 8 -c /home/weijing/gem5-gpu/m5threads/tests/test_omp.cpp -o "8 8"
+    $build/X86_VI_hammer_GPU/gem5.opt ../gem5-gpu/configs/se_fusion.py -n 8 -c /home/me/gem5-gpu/m5threads/tests/test_omp -o "8 8"
 
 Note, we change the number of codes to 8, so that we can have 8 threads. 
